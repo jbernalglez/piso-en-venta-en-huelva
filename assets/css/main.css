@@ -1,0 +1,510 @@
+html {
+    font-family: 'Oswald', sans-serif;
+    background: #fbfbfb
+    color: #000;
+}
+.parallax {
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.fullScreen {
+	height: 100vh;
+}
+
+.fullScreen_80 {
+    height: 80vh;
+}
+
+.fullScreen_20 {
+    height: 20vh;
+}
+
+.fullScreen_15 {
+    height: 15vh;
+}
+
+#featuresBoxCabecera {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    /*border: solid 1px green;*/
+    border-top: dashed 1px #333;
+    border-bottom: dashed 1px #333;
+    width: 100%;
+    padding: 1em;
+   /* color: #17baa7;*/
+
+}
+
+#featuresBoxCabecera i {
+    font-size: 2em;
+}
+
+#featuresBoxCabecera span {
+    font-size: 1em;
+}
+
+.verticalCenterText {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper, .wrapperText {
+   /* border: solid red 1px;*/
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.wrapperSection {
+    margin: 0;
+    padding: 1.75vh 0 5vh 0; 
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-column {
+    flex-flow: column wrap;
+}
+
+.flex-estancias {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.descripcionPiso {
+    font-size: 1em;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+.botonFlotante {
+    position: fixed;
+    bottom: 3vh;
+    right: 2%;
+    text-align: center;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: #17baa7;
+    width: 3em;
+    height: 3em;
+}
+
+.botonFlotante a {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;    
+}
+
+.price {
+    position: absolute;
+    bottom: 3vh;
+    left: 2%;
+    text-align: center;
+    z-index: 1;
+    transform: rotate(-25deg);
+}
+
+.price span {
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1em;
+    z-index: 2;
+}
+
+.estrella-12puntas {
+    background-color: #17baa7;  
+    width: 6em;
+    height: 6em;
+    position: relative;
+    text-align: center;
+}
+
+.estrella-12puntas:before, .estrella-12puntas:after {
+    content: "";
+    background-color: #17baa7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6em;
+    width: 6em;
+}
+
+.estrella-12puntas:before {
+    transform: rotate(30deg);     
+}
+
+.estrella-12puntas:after {
+    transform: rotate(60deg);    
+}
+
+.separator {
+    height: 10em;
+}
+
+.separator > .wrapper {
+    width: 95%;
+}
+
+.lineaDoble {
+    width: 100%;
+    height: 7px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-top: solid 2.5px black;
+    border-bottom: solid 1px black;
+}
+
+.separatorTitle {
+    padding: 0 10px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+.separatorDesc {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999;
+}
+
+#listadoEstancias.flex {
+    justify-content: space-between;
+}    
+
+.iconBox {
+    width: 24%;
+    height: 260px;
+    margin: 10px 0;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    letter-spacing: 1px;      
+}
+
+.iconBox > span {
+    display: block;
+    height: 100%;
+    width: 100%; 
+}
+
+.infoCarousel {
+    width: 45%;
+    border: solid 1px black;
+    height: auto;
+}
+
+.separador-infoCarousel {
+    width: 90%;
+    height: 0px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-top: dashed 1px black;
+
+}
+
+.planoArc {
+    margin: 2.5em auto;
+    width: 90%;
+    height: 180px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;   
+}
+
+#infoSalon.planoArc {
+    background-image: url("../img/salon/plano.png");
+}
+
+#infoCocina.planoArc {
+    background-image: url("../img/cocina/plano.png");
+}
+
+#infoBath.planoArc {
+    background-image: url("../img/bath/plano.png");
+}
+
+#infoDorm1.planoArc {
+    background-image: url("../img/dorm1/plano.png");
+}
+
+#infoDorm2.planoArc {
+    background-image: url("../img/dorm2/plano.png");
+}
+
+#infoGaraje.planoArc {
+    background-image: url("../img/garaje/plano.png");
+}
+
+#infoPortal.planoArc {
+    background-image: url("../img/portal/plano.png");
+}
+
+#infoPlaza.planoArc {
+    background-image: url("../img/plaza/plano.png");
+}
+
+.mapa {
+    width: 100%;
+    height: 60vh;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapperContacto {
+    width: 40%;
+    height: auto;
+    padding: 18px 30px 60px;
+    margin: 0 auto;
+    background: rgb(247,247,247);
+    border: 1px solid rgba(147,184,189,0.8);
+    box-shadow: 0pt 2px 5px rgba(105,108,109,0.7), 0px 0px 8px 5px rgba(208,233,226,0.4) inset;
+    border-radius: 5px;
+}
+
+form h1 {
+    font-size: 2em;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2px 0 30px 0;
+    color: rgb(6,106,117);
+}
+
+form h1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top 10px;
+    background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%, rgba(147,184,189,0.8) 20%, rgba(147,184,189,1) 53%, rgba(147,184,189,0.8) 79%, rgba(147,184,189,0) 100%);
+    background: -o-linear-gradient(left, rgba(147,184,189,0) 0%, rgba(147,184,189,0.8) 20%, rgba(147,184,189,1) 53%, rgba(147,184,189,0.8) 79%, rgba(147,184,189,0) 100%);
+    background: linear-gradient(to right, rgba(147,184,189,0) 0%, rgba(147,184,189,0.8) 20%, rgba(147,184,189,1) 53%, rgba(147,184,189,0.8) 79%, rgba(147,184,189,0) 100%);
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+form p.button input {
+    width: 30%;
+    cursor: pointer;
+    background: rgb(61,157,179);
+    padding: 8px 5px;
+    color: white;
+    /*font-size: 1.3em;*/
+    border: solid 1px rgb(28,108,122);
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0px 1px 6px 4px rgba(0,0,0,0.07) inset, 0px 0px 0px 3px rgb(254,254,254), 0px 5px 3px 3px rgb(210,210,210);
+    transition: all 0.2s linear;
+}
+
+form label {
+    color: rgb(64,92,96);
+    position: relative;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin-top: 4px;
+    padding: 5px 5px 5px 15px;
+    border: 1px solid rgb(178,178,178);
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px 0px rgba(168,168,168,0.6) inset;
+    transition: all 0.2s linear;
+}
+
+p.button {
+    text-align: right;
+    margin: 5px 0;
+}
+
+input {
+    outline: none;
+}
+/* PROPIEDADES SEGÚN EL ANCHO DE LA PANTALLA */
+
+@media (max-width: 1281px){
+    .price {
+        left: 3%;
+    }
+
+    .iconBox {
+        height: 180px;
+    }
+
+    .wrapperContacto {
+        width: 50%;
+    }     
+}
+
+@media (max-width: 1025px){
+    .price {
+        left: 4%;
+    }
+
+    .price span {
+        font-size: 0.9em;        
+    }
+
+    .estrella-12puntas {  
+        width: 5em;
+        height: 5em;
+    }
+
+    .estrella-12puntas:before, .estrella-12puntas:after {
+        height: 5em;
+        width: 5em;
+    }
+
+    .iconBox {
+        width: 32%;
+    }   
+}
+
+@media (max-width: 981px) {
+    .iconBox {
+        width: 49%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 800px) {
+    .iconBox {
+        height: 200px;
+    }
+}
+
+@media (max-width: 769px) {
+/*    #section2.fullScreen {
+        height: 100%;
+    } */
+
+    .wrapper {
+        width: 95%;
+    }
+
+    .descripcionPiso {
+        text-align: left;
+    }
+
+    .separatorTitle {
+        font-size: 1.5em;
+    }
+
+    .separatorDesc {
+        font-size: 0.9em;
+    }
+
+    .price {
+        left: 4%;
+    }
+
+    .iconBox {
+        width: 100%;
+        height: 300px;
+    }
+
+    .flex-estancias {
+        flex-flow: column-reverse nowrap;
+    }
+    
+    .infoCarousel {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2.5em;
+    }
+
+    #listadoEstancias.flex {
+        flex-flow: column wrap;
+    }
+
+    .wrapperContacto {
+        width: 60%;
+    }    
+}
+
+@media (max-width: 481px) {
+    .price {
+        left: 8%;
+    }
+
+    .wrapperContacto {
+        width: 90%;
+    }
+}
+
+@media (max-width: 361px){
+    .iconBox {
+        height: 200px;
+    }
+}
+
+
+/* PROPIEDADES SEGÚN LA ALTURA DE LA PANTALLA */
+
+@media (max-height: 1025px){
+    .price {
+        bottom: 3vh;
+    }
+}
+
+@media (max-height: 981px){
+    .mapa {
+        height: 50vh;
+    }
+}
+
+@media (max-height: 769px){
+    .price {
+        bottom: 4vh;
+    }
+}
+
+@media (max-height: 481px){
+    .price {
+        bottom: 5vh;
+    }   
+}
+
+@media (max-height: 361px){
+    .price {
+        bottom: 6vh;
+    }
+}
+
+@media (max-height: 321px){
+    .price {
+        bottom: 7vh;
+    }
+}
