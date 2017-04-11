@@ -96,23 +96,18 @@ html {
     z-index: 1;
     border-radius: 40px;
     background-color: #17baa7;
-    width: 6em;
+    width: 6.2em;
     height: 3em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    flex-direction: row;     
+    display: flex; 
 }
 
 .botonFlotante a {
-    display: block;
     width: 50%;
-    height: 100%;
-    font-weight: bold;
     font-size: 1.3em;
-    color: #ffffff;   
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
 }
 
 .price {
