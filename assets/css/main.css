@@ -96,14 +96,15 @@ html {
     z-index: 1;
     border-radius: 40px;
     background-color: #17baa7;
-    width: 6.2em;
+    width: 6.3em;
     height: 3em;
-    display: flex; 
+    display: flex;
+    box-shadow: 1px 1px 1px #666;    
 }
 
 .botonFlotante a {
     width: 50%;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #ffffff;
     display: flex;
     justify-content: space-around;
@@ -311,6 +312,10 @@ form h1::after {
 
 form p {
     margin-bottom: 15px;
+}
+
+form.msgEnviado p {
+    text-align: center;
 }
 
 form p.button input {
