@@ -80,7 +80,7 @@
   transition: all 0.35s ease-in-out;
 }
 
-.ih-item.square.effect6 .info h3 {
+.ih-item.square.effect6 .info h1 {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -119,7 +119,7 @@
   opacity: 1;
 }
 
-.ih-item.square.effect6.from_left_and_right .info h3 {
+.ih-item.square.effect6.from_left_and_right .info h1 {
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
@@ -135,7 +135,7 @@
   transform: translateX(100%);
 }
 
-.ih-item.square.effect6.from_left_and_right a:hover .info h3,
+.ih-item.square.effect6.from_left_and_right a:hover .info h1,
 .ih-item.square.effect6.from_left_and_right a:hover .info p {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
